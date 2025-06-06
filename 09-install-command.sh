@@ -15,7 +15,7 @@ else
 fi
 
 dnf list installed mysql  # to check whether mysql is installed or not. 
-                          # Here we can run dnf list installed mysql and echo $?. If mysql is already installed, $? returns 0. If not it will be a number between 1-127.
+                          # Here we can run dnf list installed mysql and echo $? in our linux machine. If mysql is already installed, $? returns 0. If not it will be a number between 1-127.
 if [ $? -ne 0 ]
 then
     echo "Mysql is not installed... going to install"
