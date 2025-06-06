@@ -7,6 +7,7 @@ USERID=(id -u)
 # if it is a root user, then id is equal to 0
 
 if [ $USERID -ne 0 ]
+
 then 
     echo "Error :: Please run the script with the root access"
     exit 1 
@@ -14,5 +15,5 @@ else
     echo " You are running with root access"
 fi
 
-dnf install mysql -y
+dnf install mysql
 
