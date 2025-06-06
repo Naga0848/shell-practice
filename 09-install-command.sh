@@ -14,3 +14,10 @@ else
     echo "You are running with root access"
 fi
 
+if [ $? -eq 0 ]
+then
+    echo "Installing Mysql is ... SUCCESSFUL"
+else
+    echo "Installing Mysql is FAILURE"
+    exit 1
+
