@@ -2,7 +2,7 @@
 
 
 USERID=$(id -u)
-# I general we use id -u command in Linux to know the id of the user. But here in schell script we give this command to a variable called USERID.
+# In general we use id -u command in Linux to know the id of the user. But here in schell script we give this command to a variable called USERID.
 
 # if it is a root user, then id is equal to 0
 
