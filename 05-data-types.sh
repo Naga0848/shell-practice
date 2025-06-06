@@ -7,7 +7,7 @@
 TIMESTAMP=$(date)
 echo "Script executed at: $TIMESTAMP"
 
-#here TIMESTAMP is a variable and we are storing the value of date in this variable
+# here TIMESTAMP is a variable and we are storing the value of date in this variable
 
 
 
@@ -21,3 +21,9 @@ SUM=$(($NUMBER1+$NUMBER2))
 echo "SUM of $NUMBER1 and $NUMBER2 is: $SUM"
 
 # Here NUMBER1 & NUMBER2 are variables, and we are storing the value in another variable called SUM 
+
+
+
+
+
+
