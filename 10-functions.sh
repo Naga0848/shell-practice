@@ -35,7 +35,7 @@ else
     echo "Mysql is already installed...nothing to do"
 fi
 
-
+# Installing nginx
 dnf list installed nginx  # to check whether nginx is installed or not. 
                           # Here we can run dnf list installed nginx and echo $? in our linux machine. If nginx is already installed, $? returns 0. If not it will be a number between 1-127.
 if [ $? -ne 0 ]
@@ -45,6 +45,19 @@ then
     VALIDATE $1 "nginx"
 else
     echo "nginx is already installed...nothing to do"
+fi
+
+
+# Installing python3
+dnf list installed python3  # to check whether python3 is installed or not. 
+                          # Here we can run dnf list installed python3 and echo $? in our linux machine. If python3 is already installed, $? returns 0. If not it will be a number between 1-127.
+if [ $? -ne 0 ]
+then
+    echo "python3 is not installed... going to install"
+    dnf install python3 -y
+    VALIDATE $1 "python3"
+else
+    echo "python3 is already installed...nothing to do"
 fi
 # dnf install mysql -y
 
