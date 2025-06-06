@@ -14,7 +14,7 @@ else
     echo "You are running with root access"
 fi
 
-dnf install mysql -y
+dnf install ggguiuuyujdytfjbkhj -y
 
 if [ $? -eq 0 ]
 then
