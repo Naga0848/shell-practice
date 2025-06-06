@@ -14,6 +14,15 @@ else
     echo "You are running with root access"
 fi
 
+dnf list installed mysql  # to check whether mysql is installed or not. 
+                          # Here we can run dnf list installed mysql and echo $?. If mysql is already installed, $? returns 0. If not it will be a number between 1-127.
+if [$? -ne 0 ]
+then
+    echo "Mysql is not installed... going to install"
+else
+    echo "Mysql is already installed"
+    exit 1
+
 dnf install mysql -y
 
 if [ $? -eq 0 ]
