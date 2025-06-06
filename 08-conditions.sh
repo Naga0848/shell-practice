@@ -9,13 +9,9 @@ NUMBER=$1
 # -ne --> not equal
 
 if [ $NUMBER -lt 0 ]
-
 then
-
     echo "Given number $NUMBER is less than 10"
 
 else
-
     echo "Given number $NUMBER is greater than 10"
-
 fi
