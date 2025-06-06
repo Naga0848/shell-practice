@@ -11,7 +11,7 @@ echo "Script executed at: $TIMESTAMP"
 
 
 
-#Storing the sum of twwo numbers in a variable
+#Storing the sum of two numbers in a variable
 
 
 NUMBER1=100
