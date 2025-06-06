@@ -9,4 +9,4 @@ echo "$PERSON1:: I am fine thankyou, whats up ?"
 echo "$PERSON2:: Nothing, just going to Mars now, will you come ?"
 echo "$PERSON1:: Sorry, you carry on!! I will come once you come back"
 
-#we have to use $ in variables so that shell will understand the difference between the normal text and a variable
+# we have to use $ in variables so that shell will understand the difference between the normal text and a variables
