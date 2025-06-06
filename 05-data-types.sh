@@ -9,7 +9,7 @@ echo "Script executed at: $TIMESTAMP"
 
 #here TIMESTAMP is a variable and we are storing the value of date in this variable
 
-----------------
+
 
 #Storing the sum of twwo numbers in a variable
 
