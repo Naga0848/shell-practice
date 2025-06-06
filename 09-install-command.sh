@@ -42,3 +42,6 @@ fi
 #     exit 1
 # fi
 
+#Basic steps to install mysql via schell scripting
+#1) check if u are executing as a root user or not
+#2) check if mysql is installed or not, if not installed then proceed to install, otherwise show error.
