@@ -14,6 +14,9 @@ else
     echo "You are running with root access"
 fi
 
+
+# This is a VALIDATE function and takes input as exit status. If exit status is 0 means, the command they wanted to execute is successful. So, we are mentioning as echo "Installing $2 is ... SUCCESSFUL" and if exit status is not equal to 0, then we say echo "Installing $2 is FAILURE" because there might be a wrong in the command.
+
 VALIDATE(){
 if [ $? -eq 0 ]
 then
