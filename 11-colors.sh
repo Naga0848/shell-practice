@@ -6,4 +6,6 @@
 
 echo -e "\e[31m Hello-World \e[0m"
 
+# \e[0m  denotes no color(white)
+
 echo "Hello NO Colors"
