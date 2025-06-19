@@ -40,7 +40,7 @@ then
     dnf install mysql -y
     VALIDATE $? "Mysql"
 else
-    echo -e "Mysql is already installed...$R nothing to do $N" # As mysql is already is installed, it is displayed in Red color
+    echo -e "Mysql is already installed...$Y nothing to do $N" # As mysql is already is installed, it is displayed in Red color
 fi
 
 # Installing nginx
@@ -52,7 +52,7 @@ then
     dnf install nginx -y
     VALIDATE $? "nginx"
 else
-    echo -e "nginx is already installed...$R nothing to do $N" # As nginx is already is installed, it is displayed in Red color
+    echo -e "nginx is already installed...$Y nothing to do $N" # As nginx is already is installed, it is displayed in Red color
 fi
 
 
@@ -65,7 +65,7 @@ then
     dnf install python3 -y
     VALIDATE $? "python3"
 else
-    echo -e "python3 is already installed...$R nothing to do $N"  # As python is already is installed, it is displayed in Red color
+    echo -e "python3 is already installed...$Y nothing to do $N"  # As python is already is installed, it is displayed in Red color
 fi
 # dnf install mysql -y
 
