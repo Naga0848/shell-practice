@@ -56,7 +56,7 @@ else
 fi 
 }
 
-for package in ${PACKAGES [@]}
+for package in ${PACKAGES[@]}
 do 
 dnf list installed $package &>>$LOG_FILE  # to check whether mysql is installed or not. 
                           # Here we can run dnf list installed mysql and echo $? in our linux machine. If mysql is already installed, $? returns 0. If not it will be a number between 1-127.
