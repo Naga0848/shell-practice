@@ -33,9 +33,10 @@ echo "script started executing at : $(date)" &>>$LOG_FILE
 
 # And finally, we are storing th outuput of every command in $LOG_FILE
 
+# Here all the logs are stored at LOG_FILE and nothing is displayed on the screen. To avoid this we are using a tee command where ever we want the output on the screen and replace &>>$LOG_FILE with | tee -a $LOG_FILE
 if [ $USERID -ne 0 ]
 then
-    echo -e "$R ERROR:: Please run this script with root access $N" &>>$LOG_FILE
+    echo -e "$R ERROR:: Please run this script with root access $N" | tee -a $LOG_FILE
     exit 1 #give other than 0 upto 127. If we give exit status, the shell will stop executing the other lines of commands if the previous line is having any error
 else
     echo "You are running with root access" &>>$LOG_FILE
@@ -47,7 +48,7 @@ fi
 VALIDATE(){
 if [ $? -eq 0 ]
 then
-    echo -e " Installing $2 is ...$G SUCCESSFUL $N" &>>$LOG_FILE
+    echo -e " Installing $2 is ...$G SUCCESSFUL $N" | tee -a $LOG_FILE
 else
     echo "Installing $2 is $R FAILURE $N" &>>$LOG_FILE
     exit 1
@@ -58,11 +59,11 @@ dnf list installed mysql  # to check whether mysql is installed or not.
                           # Here we can run dnf list installed mysql and echo $? in our linux machine. If mysql is already installed, $? returns 0. If not it will be a number between 1-127.
 if [ $? -ne 0 ]
 then
-    echo "Mysql is not installed... going to install" &>>$LOG_FILE
+    echo "Mysql is not installed... going to install" | tee -a $LOG_FILE
     dnf install mysql -y
     VALIDATE $? "Mysql"
 else
-    echo -e "Mysql is already installed...$R nothing to do $N" &>>$LOG_FILE # As mysql is already is installed, it is displayed in Red color
+    echo -e "Mysql is already installed...$R nothing to do $N" | tee -a $LOG_FILE # As mysql is already is installed, it is displayed in Red color
 fi
 
 # Installing nginx
@@ -74,7 +75,7 @@ then
     dnf install nginx -y
     VALIDATE $? "nginx"
 else
-    echo -e "nginx is already installed...$R nothing to do $N"  &>>$LOG_FILE # As nginx is already is installed, it is displayed in Red color
+    echo -e "nginx is already installed...$R nothing to do $N"  | tee -a $LOG_FILE # As nginx is already is installed, it is displayed in Red color
 fi
 
 
@@ -87,7 +88,7 @@ then
     dnf install python3 -y
     VALIDATE $? "python3"
 else
-    echo -e "python3 is already installed...$R nothing to do $N" &>>$LOG_FILE  # As python is already is installed, it is displayed in Red color
+    echo -e "python3 is already installed...$R nothing to do $N" | tee -a $LOG_FILE  # As python is already is installed, it is displayed in Red color
 fi
 # dnf install mysql -y
 
