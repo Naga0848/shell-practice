@@ -13,3 +13,12 @@ echo "$PERSON2:: Hello $PERSON1, Good Morning, I am doing great, How are you ?"
 echo "$PERSON1:: I am fine thankyou, whats up ?"
 echo "$PERSON2:: Nothing, just going to Mars now, will you come ?"
 echo "$PERSON1:: Sorry, you carry on!! I will come once you come back"
+
+
+
+# Manam baita nundi kuda we can send the values which are called arguments or args
+
+# 04.variables.sh value1 value2   ekkada manam runtime lo values ni provide chesthunnam and   here value1 is $1 and value2 is $2
+
+
+
