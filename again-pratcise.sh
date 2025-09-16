@@ -25,15 +25,15 @@ then
     exit 1
 fi    
 
-# dnf install mysql -y
-# 
-# if [$? -eq 0 ]
-# then
-    # echo "MySQL is already installed"
-    # exit 1
-    # else
-    # echo "There is nothing to install"
-    # exit 1
-# fi    
-# 
+dnf install python3 -y
+
+if [$? -ne 0 ]
+then
+    echo "Python3 is not installed"
+    exit 1
+    else
+    echo "Installing python3 is successful"
+    exit 1
+fi    
+
 
