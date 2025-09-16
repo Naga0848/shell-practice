@@ -15,7 +15,7 @@ fi
 
 dnf list installed mqsql
 
-if [$? -eq 0 ]
+if [ $? -eq 0 ]
 then
     echo "MySQL is installed"
     exit 1
