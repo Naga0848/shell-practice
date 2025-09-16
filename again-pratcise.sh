@@ -14,9 +14,9 @@ then
 fi
 
 
-dnf list installed mqsql
+dnf list installed mysql
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then
     echo "MySQL is already installed"
     exit 1
