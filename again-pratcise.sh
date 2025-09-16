@@ -4,7 +4,7 @@
 
 USERID=$(id -u)
 
-if [USERDID -ne 0]
+if [$USERDID -ne 0]
 then 
     echo "please run the scripta as a root user"
     else
