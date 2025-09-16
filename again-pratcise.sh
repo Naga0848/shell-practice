@@ -10,6 +10,7 @@ then
     exit 1
     else
     echo "you are running as a root user"
+    exit 1
 fi
 
 
