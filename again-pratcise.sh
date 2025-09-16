@@ -38,7 +38,7 @@ fi
 
 dnf install python3 -y
 
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
     echo "Python3 is not installed"
     exit 1
