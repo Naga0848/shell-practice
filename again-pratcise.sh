@@ -7,18 +7,19 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then 
     echo "please run the script as a root user"
-    exit 1
+    
     else
     echo "you are running as a root user"
+    exit 1
 fi
 
 
 dnf list installed mqsql
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
     echo "MySQL is already installed"
-
+    exit 1
     else
     echo "There is nothing to install"
     exit 1
