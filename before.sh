@@ -9,3 +9,11 @@ then
 else
     echo "You are running as a root user"
 fi
+
+
+dnf list installed mysql
+
+if [ $? -eq 0 ]
+then
+    echo "Mysql is already istalled"
+    
