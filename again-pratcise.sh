@@ -1,3 +1,8 @@
+
+#!bin/bash
+
+
+
 #Again I am practising shell scripting
 
 
