@@ -1,12 +1,11 @@
-#!bin/bash
+#!/bin/bash
 
-USERID=(id -u)
+USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
+if [ USERDID -ne 0 ]
 then 
-    echo "please run the script as a root user"
+    echo "ERROR:: You are not runnignas a root user"
+else
+    echo "You are running as a root user"
     exit 1
-    else
-    echo "you are running as a root user"
-    
-fi  
+fi
