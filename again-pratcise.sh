@@ -25,6 +25,17 @@ then
     
 fi    
 
+
+dnf list installed python3
+if [ $? -eq 0 ]
+then
+    echo "Python is not installed"
+  
+    else
+    echo "we are going to install python3"
+    
+fi    
+
 dnf install python3 -y
 
 if [$? -ne 0 ]
@@ -34,6 +45,7 @@ then
     else
     echo "Installing python3 is successful"
     exit 1
-fi    
+fi   
+
 
 
