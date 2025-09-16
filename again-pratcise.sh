@@ -14,13 +14,13 @@ then
 fi
 
 
-# dnf list installed mqsql
-# 
-# if [$? -eq 0 ]
-# then
-    # echo "MySQL is installed"
-    # exit 1
-    # else
-    # echo "MySQL is not installed"
-    # exit 1
-# fi    
+dnf list installed mqsql
+
+if [$? -eq 0 ]
+then
+    echo "MySQL is installed"
+    exit 1
+    else
+    echo "MySQL is not installed"
+    exit 1
+fi    
