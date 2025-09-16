@@ -19,10 +19,10 @@ dnf list installed mysql
 if [ $? -eq 0 ]
 then
     echo "MySQL is already installed"
-    exit 1
+  
     else
     echo "There is nothing to install"
-    exit 1
+    
 fi    
 
 dnf install python3 -y
