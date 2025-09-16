@@ -17,22 +17,21 @@ dnf list installed mqsql
 
 if [ $? -eq 0 ]
 then
-    echo "MySQL is installed"
-    exit 1
-    else
-    echo "MySQL is not installed"
-    echo "going to install MySQL"
-fi    
-
-dnf install mysql -y
-
-if [$? -eq 0 ]
-then
     echo "MySQL is already installed"
     exit 1
     else
-    echo "There is nothing to install"
-    exit 1
+    echo "There is nothing to installThere is nothing to install"
 fi    
 
+# dnf install mysql -y
+# 
+# if [$? -eq 0 ]
+# then
+    # echo "MySQL is already installed"
+    # exit 1
+    # else
+    # echo "There is nothing to install"
+    # exit 1
+# fi    
+# 
 
