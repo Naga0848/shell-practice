@@ -21,7 +21,7 @@ then
     exit 1
     else
     echo "MySQL is not installed"
-    exit 1
+    echo "going to install MySQL"
 fi    
 
 dnf install mysql -y
