@@ -37,9 +37,9 @@ if [ $? -ne 0 ]
 then
     echo "nginx is not installed, going to nginx"
     VALIDATE $? "nginx"
-
+    exit 1
 else
     echo "nginx is already installed...."
-    exit 1
+    
 fi
 
