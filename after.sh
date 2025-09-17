@@ -10,7 +10,7 @@ then
     exit 1
 
 else 
-    echo "Yo are running as a root user"
+    echo "You are running as a root user"
 
 fi
 
@@ -20,11 +20,10 @@ if [ $? -eq 0 ]
 
 then 
     echo "Mysql is already installed"
-    exit
+    
 else
 
     echo "Install mysql"
-    exit 1
 
     dnf install mysql -y
 
