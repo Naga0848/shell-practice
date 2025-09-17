@@ -29,7 +29,6 @@ else
     echo "MySQL is not properly installed"
     exit 1
 fi
-
 else 
     echo "MySQL is already installed"
 fi
