@@ -23,6 +23,7 @@ else
     "MySQL is already installed"
     exit 1
 
+fi
 
     dnf install mysql -y
     
