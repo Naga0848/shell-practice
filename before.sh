@@ -16,8 +16,7 @@ dnf list installed mysql
 
 if [ $? -eq 0 ]
 then
-    echo "Mysql is already istalled"
-else 
     echo "MySQL is not installed, we are going to install it soon"
     exit 1
+fi
     
