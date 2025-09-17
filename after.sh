@@ -24,6 +24,7 @@ then
 else
 
     echo "Install mysql"
+    exit 1
 
 fi
 
