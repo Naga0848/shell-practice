@@ -14,6 +14,16 @@ else
 
 fi
 
+dnf list installed mysql
+
+if [ $? -eq 0 ]
+
+then 
+    echo "Mysql is already installed"
+    exit
+else
+
+
 
 
     
