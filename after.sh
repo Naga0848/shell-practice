@@ -26,6 +26,18 @@ else
     echo "Install mysql"
     exit 1
 
+    dnf install mysql -y
+
+if [ $? -eq 0 ]
+
+then 
+    echo "Mysql is installed"
+else
+    echo  mysql is not installed"
+    exit 1
+
+fi
+
 fi
 
 
