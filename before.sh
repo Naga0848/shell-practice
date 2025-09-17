@@ -31,6 +31,5 @@ else
 fi
 
 else 
-
     echo "MySQL is already installed"
 fi
