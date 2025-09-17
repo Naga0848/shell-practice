@@ -20,14 +20,13 @@ then
     echo "MySQL is not installed, we are going to install it soon"  
     dnf install mysql -y
     
-if [ $? -eq 0 ]
-
-then 
+    if [ $? -eq 0 ]
+    then 
     echo "MySQL is successfully installed"
-else 
-    echo "MySQL is not properly installed"
+    else 
+    echo "MySQL is not installed properly"
     exit 1
-fi
+    fi
 else 
     echo "MySQL is already installed"
 fi
