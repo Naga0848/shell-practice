@@ -16,6 +16,14 @@ if [ $? -ne 0 ]
 then
     echo "Mysql is not installed, going to install"
 
+    dnf install mysql -y 
+    if [ $? -eq 0 ]
+    then
+        echo "mysql is installed properly"
+    else
+        echo "mysql is not installed properly"
+    fi
+
 else
     echo "mysql is already installed"
     exit 1
