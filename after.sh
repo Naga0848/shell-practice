@@ -12,6 +12,8 @@ then
 else 
     echo "Yo are running as a root user"
 
+fi
+
 
 
     
