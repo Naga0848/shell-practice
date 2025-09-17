@@ -11,6 +11,7 @@ else
 fi
 
 
+
 dnf list installed mysql
 
 if [ $? -eq 0 ]
