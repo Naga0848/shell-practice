@@ -20,7 +20,7 @@ then
     echo "MySQL is not installed, we are going to install it soon"
 
 else
-    "MySQL is already installed"
+    echo "MySQL is already installed"
     exit 1
 
 fi
