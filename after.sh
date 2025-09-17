@@ -23,6 +23,10 @@ then
     exit
 else
 
+    echo "Install mysql"
+
+fi
+
 
 
 
