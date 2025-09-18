@@ -33,7 +33,7 @@ then
     # echo "Installing mysql is ... FAILURE"
     # exit 1
 # fi
-    VALIDATE $1 "mysql"
+    VALIDATE $? "mysql"
 else
     echo "MySQL is already installed...Nothing to do"
 fi
@@ -50,7 +50,7 @@ then
     # echo "Installing nginx is ... FAILURE"
     # exit 1
 # fi
-    VALIDATE $2 "nginx"
+    VALIDATE $? "nginx"
 else
     echo "nginx is already installed...Nothing to do"
 fi
@@ -69,7 +69,7 @@ then
     # echo "Installing python3 is ... FAILURE"
     # exit 1
 # fi
-    VALIDATE $1 "python3"
+    VALIDATE $? "python3"
 else
     echo "python3 is already installed...Nothing to do"
 fi
