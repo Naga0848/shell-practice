@@ -21,12 +21,12 @@ VALIDATE(){
     fi
 }
 
-dnf list installed mysql
+dnf list installed nginx
 if [ $? -ne 0 ]
 then
-    echo "MySQL is not installed... going to install it"
-    dnf install mysql -y
-    VALIDATE $? "MySQL"
+    echo "nginx is not installed... going to install it"
+    dnf install nginx -y
+    VALIDATE $? "nginx"
 else
-    echo "MySQL is already installed...Nothing to do"
+    echo "nginx is already installed...Nothing to do"
 fi
