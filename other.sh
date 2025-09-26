@@ -40,3 +40,13 @@ then
 else
     echo "python3 is already installed...Nothing to do"
 fi
+
+dnf list installed nodejs
+if [ $? -ne 0 ]
+then
+    echo "nodejs is not installed... going to install it"
+    dnf install nodejs -y
+    VALIDATE $? "nodejs"
+else
+    echo "nodejs is already installed...Nothing to do"
+fi
